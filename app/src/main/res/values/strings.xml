@@ -2,4 +2,13 @@
     <string name="app_name">About Me</string>
     <string name="name">Laszlo Toth</string>
     <string name="yellow_star">Yellow star</string>
+
+    <string name="bio"> Hi, my name is Laszlo.
+        \n\nIt\'s just a reminder, I am a junior Andrid Developer.
+        \n\nI have so much fun during I learn Kotlin.
+        \n\nBut To be honest, it`s a bit strange after Java.
+        \n\nI can`t see the point why it is so preferred over Java yet.
+        \n\nWell, ladies and Gentlemen.
+        \n\nI hope you enjoy your journey with Udacity:)
+        \n\nBye bye now :)\n\n</string>
 </resources>
