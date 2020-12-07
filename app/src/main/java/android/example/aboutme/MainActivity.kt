@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    // Instance of MyName data class
     private val myName: MyName = MyName("Laszlo Toth")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,12 +40,12 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             binding.nicknameText.text = binding.nicknameEdit.text
             myName?.nickname = nicknameEdit.text.toString()
+            // Invalidate all binding expressions and request a new rebind to refresh UI
             invalidateAll()
             binding.nicknameEdit.visibility = View.GONE
             binding.doneButton.visibility = View.GONE
             binding.nicknameText.visibility = View.VISIBLE
         }
-
 
         // Hide the keyboard.
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
